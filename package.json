@@ -1,0 +1,23 @@
+{
+  "name": "open-ebms",
+  "version": "1.0.0",
+  "description": "Opensource ebMS RESTful webservice API",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node --env-file .env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thai-customs/open-ebms.git"
+  },
+  "author": "Tinnakrit Ngamdee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thai-customs/open-ebms/issues"
+  },
+  "homepage": "https://github.com/thai-customs/open-ebms#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
