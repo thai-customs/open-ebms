@@ -1,9 +1,6 @@
-FROM node:iron-alpine3.18
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+FROM node:iron-alpine3.19
 WORKDIR /home/node/app
-COPY package*.json ./
-USER node
+COPY package*.json index.js ./
 RUN npm install
-COPY --chown=node:node . .
 EXPOSE 3000
 CMD [ "npm", "run", "serve"]
