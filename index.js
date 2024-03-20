@@ -1,13 +1,8 @@
 const express = require('express')
-const package = require('./package.json')
 const app = express()
+const router = require('./interfaces/webservice')
 const port = process.env.PORT || 3000
-const { name, version, author, license } = package
-app.get('/', (req, res) => {
-  res.json({
-    status: 200, result: { name, version, author, license }
-  })
-})
+app.use('/ebms', router)
 app.listen(port, () => {
-  console.log(`${name} (${version}) app listening on port ${port}`)
+  console.log(`[${new Date().toISOString()}] app listening on port ${port}`)
 })
