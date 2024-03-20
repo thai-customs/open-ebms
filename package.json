@@ -1,6 +1,6 @@
 {
   "name": "open-ebms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opensource ebMS RESTful webservice API",
   "main": "index.js",
   "scripts": {
