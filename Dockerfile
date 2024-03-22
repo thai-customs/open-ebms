@@ -1,6 +1,6 @@
 FROM node:iron-alpine3.19
 WORKDIR /home/node/app
-COPY package*.json index.js ./
+COPY . ./
 RUN npm install
-EXPOSE 3000
+EXPOSE 3080
 CMD [ "npm", "run", "serve"]

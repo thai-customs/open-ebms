@@ -1,0 +1,7 @@
+services:
+  open-ebms:
+    build:
+      context: .
+    ports:
+    - 3080:3080
+    env_file: .env
